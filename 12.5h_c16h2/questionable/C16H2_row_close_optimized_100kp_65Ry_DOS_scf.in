@@ -1,0 +1,58 @@
+ &control
+   calculation       = 'scf'
+   restart_mode      = 'from_scratch'
+   prefix = 'C16H2_row_close_optimized_100kp_65Ry_DOS'
+   outdir = '/scratch/erich/C16H2_row_close_optimized_100kp_65Ry_DOS'
+   pseudo_dir='/opt/sharcnet/espresso/4.2.1/pseudo/'
+    verbosity         = 'high'
+    wf_collect        = .true.
+ /
+ &system 
+      ibrav             =  8
+      celldm(1)         =  9.30
+      celldm(2)         =  1.732050808
+      celldm(3)         =  4.5
+      nat               =  18
+      ntyp              =  2
+      nosym             = .true.
+      ecutwfc           =  65
+    smearing          = 'fermi-dirac'
+    degauss           = 0.000735
+ /
+ &electrons
+    diago_thr_init=1.0e-3,
+    electron_maxstep = 60,
+    diagonalization='david'
+    mixing_mode = 'plain'
+!   mixing_beta = 0.9 
+!   mixing_beta = 0.85
+    mixing_beta = 0.7
+    conv_thr =  1.0d-7 
+!   conv_thr =  1.0d-4 
+!   conv_thr =  1.0d-5 
+!   conv_thr =  1.0d-10
+ /
+ATOMIC_SPECIES
+ H   0.5 H.pz-vbc.UPF
+ C   0.5 C.pz-vbc.UPF
+ATOMIC_POSITIONS (angstrom)
+H        1.298345060   2.311789550  10.840060888
+H        1.298478775   3.292322311  13.698052882
+C        0.059500393  -0.038983773  12.230955298
+C        2.538009903  -0.038978352  12.230883175
+C        0.043493514   4.244793810  12.330303608
+C        2.553882293   4.244787727  12.330336368
+C        0.043464403   1.358886615  12.207455152
+C        2.553874256   1.358901573  12.207314912
+C        0.059525211   5.642662701  12.305992536
+C        2.538015136   5.642663697  12.305995174
+C        1.298646465   2.118323453  11.945661180
+C        3.759354573   2.068284017  12.263420930
+C        1.298784350   6.369385351  12.301110326
+C        3.759456352   6.354474544  12.275289951
+C        1.298679854   3.485428962  12.592375580
+C        3.759369664   3.535363321  12.274749313
+C        1.298773679   7.758373892  12.235506771
+C        3.759442557   7.773238259  12.261503310
+K_POINTS {automatic} 
+  8  8  1     1  1  1

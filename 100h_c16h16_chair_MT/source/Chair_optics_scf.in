@@ -1,0 +1,46 @@
+ &control
+    calculation       = 'scf'
+    restart_mode      = 'from_scratch'
+   prefix = 'Phil_opt'
+   outdir = '/scratch/pmcnelle/Phil_opt'
+    verbosity         = 'high'
+    wf_collect        = .true.
+ /
+ &system
+      ibrav             =  8
+      celldm(1)         =  4.65
+      celldm(2)         =  1.732050808
+      celldm(3)         =  9
+      nat               =  8
+      ntyp              =  2
+      nosym             = .true.
+      ecutwfc           =  65
+    smearing          = 'fermi-dirac'
+    degauss           = 0.000735
+ /
+ &electrons
+    diago_thr_init=1.0e-3,
+    electron_maxstep = 60,
+    diagonalization='david'
+    mixing_mode = 'plain'
+!   mixing_beta = 0.9
+!   mixing_beta = 0.85
+    mixing_beta = 0.7
+!   conv_thr =  1.0d-4
+!   conv_thr =  1.0d-5
+    conv_thr =  1.0d-10
+ /
+ATOMIC_SPECIES
+ H   0.5 H.vbc.UPF
+ C   0.5 C.pz-vbc.UPF
+ATOMIC_POSITIONS (angstrom)
+H        2.460673809  -0.000005410  13.612187045
+H        2.460673809   1.420668699  10.925222338
+H        3.691010952   2.131008571  13.612180785
+H        3.691010952   3.551680064  10.925221099
+C        2.460673809   0.000000229  12.495554031
+C        2.460673809   1.420670661  12.041897005
+C        3.691010952   2.131008082  12.495545617
+C        3.691010952   3.551676104  12.041896057
+K_POINTS {automatic}
+ 10 10 1 0 0 0

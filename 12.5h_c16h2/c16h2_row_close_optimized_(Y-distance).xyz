@@ -1,0 +1,11 @@
+2
+FROM AVOGADRO
+C          3.75937        3.53536       12.27475
+C          3.75944        7.77324       12.26150
+
+FROM SOURCE
+C        3.759369664   3.535363321  12.274749313
+C        3.759442557   7.773238259  12.261503310
+
+The right y-distance is twice the distance between this two carbon atoms:
+(4.237874938 angsroms)(2) = 8.475749876 angstroms 

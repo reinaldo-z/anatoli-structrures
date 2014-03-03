@@ -1,0 +1,16 @@
+4
+	Aproximate possitions of atoms to calculate the distacne in X direction
+
+H          1.23034        1.73653       10.88633
+H          3.69101        1.73653       10.88633
+C          1.23034        2.06508       11.94697
+C          3.69101        2.06508       11.94697
+
+	Real positions to calculate the Y distance
+H        1.230336905   1.736531258  10.886325836
+H        3.691010952   1.736531258  10.886325836
+C        1.230336905   2.065084457  11.946973801
+C        3.691010952   2.065084457  11.946973801
+
+Distance X C-C: 2.460674047
+Distance X H-H: smae

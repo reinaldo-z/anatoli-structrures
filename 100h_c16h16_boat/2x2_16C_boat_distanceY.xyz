@@ -1,0 +1,17 @@
+4
+	Aproximate possitin of atoms to calculate the distacne in Y direction
+H          2.46067       -0.39452       13.65108
+H          2.46067        3.86749       13.65108
+C          2.46067       -0.06594       12.59048
+C          2.46067        4.19607       12.59048
+
+	Real distances to calculate the Y distance
+H        2.460673809  -0.394521773  13.651076317
+H        2.460673809   3.867490530  13.651076317
+C        2.460673809  -0.065942802  12.590475082
+C        2.460673809   4.196069241  12.590475082
+
+
+Distance Y C-C: 4.262012043
+Distance Y H-H: 4.262012303
+Average:		4.262012173

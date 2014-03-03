@@ -1,0 +1,94 @@
+# This is the input file used to set up abinit calculations
+# Comments are just accepted at the beggining of a line, otherwise it will fail. 
+# You must not remove the lines that appear as "Section: "
+######################################################
+
+######################################################
+  Section: Coordinate System: xcart->Catresian xred->Reduced xangst->Angstroms
+######################################################
+
+xcart
+
+######################################################
+  Section: Pseudo-potential files
+######################################################
+/home/reinaldo/tiniba/pseudopotentials/hgh/6c.4.hgh
+/home/reinaldo/tiniba/pseudopotentials/hgh/1h.1.hgh
+
+
+######################################################
+  Section: Common Variables
+######################################################
+
+# 
+# centrosymmetric
+
+prtvol      10
+
+### Definition of the unit cell
+chkprim     1 
+# a0=2.58  a0b = 4.878555 Bohr
+acell  4.649999696 8.054035318 35
+rprim      0.8660254037844385 -0.5 0.0 
+                 0.0           1.0 0.0 
+                 0.0           0.0 1.0
+
+### Definition of the atom types
+ntypat    2 
+znucl     6 1 
+
+### Definition of the atoms
+natom     3
+typat     1 1 2
+
+## spin-orbit
+so_psp       2 2
+nspinor      2 2
+##
+toldfe1        1.0d-6
+kptopt1        1
+
+nshiftk1 1 
+shiftk1 0.0 0.0 0.5 
+nsppol         1
+ 
+## change for convergence
+ngkpt1   7 7 7
+
+### Definition of the planewave basis set
+
+ecut   10
+
+### Definition of the SCF procedure
+
+diemac       12.0
+
+###################################################
+  Section: Scf variables
+###################################################
+
+### Dataset 1 : usual self-consistent calculation
+nstep1              200
+prtwf1              1 
+prtden1             0
+
+
+###################################################
+  Section: Optic variables
+###################################################
+
+### Dataset 2 : optics and what not
+enunit2         1 
+getden2        -1
+irdwfk1         1
+iscf2           -2
+kptnrm2         1.0 
+kptopt2         0
+nband2          60
+nstep1          0
+nstep2          200 
+prtden1         1
+prtwf2          1
+tolwfr2         1.0d-14
+
+

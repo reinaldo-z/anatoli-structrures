@@ -1,0 +1,46 @@
+ &control
+   calculation       = 'scf'
+   restart_mode      = 'from_scratch'
+   prefix = 'C4H2_row_close_optimized_PDOS_1600kp'
+   outdir = '/scratch/erich/C4H2_row_close_optimized_PDOS_1600kp'
+   pseudo_dir='/opt/sharcnet/espresso/4.3.1/pseudo/'
+    verbosity         = 'high'
+    wf_collect        = .true.
+ /
+ &system 
+    ibrav             =  8
+   celldm(1)=4.65,
+   celldm(2)=1.732050808,
+   celldm(3)=9.0,
+      nat               =  6
+      ntyp              =  2
+      nosym             = .true.
+      ecutwfc           =  45  !  use 45 for now 65
+    smearing          = 'fermi-dirac'
+    degauss           = 0.000735
+ /
+ &electrons
+    diago_thr_init=1.0e-3,
+    electron_maxstep = 60,
+    diagonalization='david'
+    mixing_mode = 'plain'
+!   mixing_beta = 0.9 
+!   mixing_beta = 0.85
+    mixing_beta = 0.7
+    conv_thr =  1.0d-7 
+!   conv_thr =  1.0d-4 
+!   conv_thr =  1.0d-5 
+!   conv_thr =  1.0d-10
+ /
+ATOMIC_SPECIES
+ H   0.5 H.pz-vbc.UPF
+ C   0.5 C.pz-vbc.UPF
+ATOMIC_POSITIONS (angstrom)
+H        2.460673853   0.342436286  13.741105571
+H        2.460673853   1.078176853  10.796355805
+C        2.460673854   0.030828762  12.665048452
+C        2.460673853   1.389876044  11.872402140
+C        3.691010864   2.185854780  12.110583807
+C        3.691010863   3.496845641  12.426806318
+K_POINTS {automatic} 
+  8  8  1     1  1  1

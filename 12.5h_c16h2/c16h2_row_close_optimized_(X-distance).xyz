@@ -1,0 +1,11 @@
+2
+FROM AVOGADRO (angstroms)
+C          1.29877        7.75837       12.23551
+C          3.75944        7.77324       12.26150
+
+FROM SOURCE (angstroms)
+C        1.298773679   7.758373892  12.235506771
+C        3.759442557   7.773238259  12.261503310
+
+The right x-distance is twice the distance between this two carbon atoms:
+(2.460668878 angsroms)(2) = 4.921337756 angstroms 

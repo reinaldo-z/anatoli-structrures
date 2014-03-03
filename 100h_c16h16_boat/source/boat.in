@@ -1,0 +1,47 @@
+!!! -bash-3.00$ m graphane_boat_scf.ina  Boat structure
+ &control
+    calculation       = 'scf'
+    restart_mode      = 'from_scratch'
+   prefix = 'Phil'
+   outdir = '/scratch/pmcnelle/Phil'
+    verbosity         = 'high'
+    wf_collect        = .true.
+ /
+ &system
+      ibrav             =  8
+      celldm(1)         =  4.65
+      celldm(2)         =  1.732050808
+      celldm(3)         =  9
+      nat               =  8
+      ntyp              =  2
+      nosym             = .true.
+      ecutwfc           =  65
+    smearing          = 'fermi-dirac'
+    degauss           = 0.000735
+ /
+ &electrons
+    diago_thr_init=1.0e-3,
+    electron_maxstep = 60,
+    diagonalization='david'
+    mixing_mode = 'plain'
+!   mixing_beta = 0.9
+!   mixing_beta = 0.85
+    mixing_beta = 0.7
+!   conv_thr =  1.0d-4
+!   conv_thr =  1.0d-5
+    conv_thr =  1.0d-10
+ /
+ATOMIC_SPECIES
+ H   0.5 H.vbc.UPF
+ C   0.5 C.pz-vbc.UPF
+ATOMIC_POSITIONS (angstrom)
+H        2.460673809  -0.394521755  13.651076548
+H        2.460673809   1.815192503  13.651076548
+H        3.691010952   1.736531294  10.886326043
+H        3.691010952   3.946151458  10.886326043
+C        2.460673809  -0.065942798  12.590475215
+C        2.460673809   1.486613546  12.590475215
+C        3.691010952   2.065084490  11.946974183
+C        3.691010952   3.617598262  11.946974183
+K_POINTS {automatic}
+ 10 10 1 0 0 0
