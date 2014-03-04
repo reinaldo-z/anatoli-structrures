@@ -8,7 +8,7 @@ set yrange [-1:35]
 # set ytics 0.001
 
 ############ S M O O T H 	
-set title "K--pts. convergence of Im $\\chi^{ii}$ (smooth)"
+set title "K--pts. convergence of Im $\\chi^{xx}$ (unsmooth)"
 set output "res1_chiIm_1_sm.tex"
 set ylabel "Im $\\chi^{xx}$"
 

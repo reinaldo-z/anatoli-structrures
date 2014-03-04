@@ -9,10 +9,10 @@ set yrange [-0.4:12]
 # set ytics 0.001
 
 ############ S M O O T H 	
-set title "Im $\\chi^{ii}$ (unsmoot, not converged)"
+set title "Im $\\chi^{xx}$ (unsmoot, 10 Ha)"
 set output "res1_chiIm_1_sm.tex"
 set ylabel "Im $\\chi^{xx}$"
-p 	"res_NC_convergence/chi1.kk_xx_yy_zz_52_10-spin_scissor_0_Nc_122" u 1:3 title " K--pts" w l lt 1 lw 3 lc 3
+p 	"res_NC_convergence/chi1.kk_xx_yy_zz_52_10-spin_scissor_0_Nc_122" u 1:3 title "52 K--pts" w l lt 1 lw 3 lc 3
 
 #  	"./" u 1:3 title " K--pts" w l lt 2 lw 3 lc 2,\
 #  	"./" u 1:3 title " K--pts" w l lt 2 lw 3 lc 3,\

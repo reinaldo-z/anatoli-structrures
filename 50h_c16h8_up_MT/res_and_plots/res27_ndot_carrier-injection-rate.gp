@@ -9,7 +9,7 @@ set xrange [0:0.6]
 
 ############ S M O O T H 	
 set title "K--pts. convergence of $\\dot{n}^{ixy}$ (smooth)"
-set output "ndot_1_sm.tex"
+set output "res27_ndot_1_sm.tex"
 set ylabel "$\\dot{n}^{xxy}$"
 p 	"./res/ndotvv.sm_xx_yy_zz_202_10-spin_scissor_0_Nc_18" u 1:2 title "202 K--pts" w l lt 2 lw 3 lc 1,\
  	"./res/ndotvv.sm_xx_yy_zz_802_10-spin_scissor_0_Nc_18" u 1:2 title "802 K--pts" w l lt 2 lw 3 lc 2,\
@@ -28,7 +28,7 @@ p 	"./res/ndotvv.sm_xx_yy_zz_202_10-spin_scissor_0_Nc_18" u 1:2 title "202 K--pt
 
 
 set title ""
-set output "ndot_2_sm.tex"
+set output "res27_ndot_2_sm.tex"
 set ylabel "$\\dot{n}^{yxy}$"
 p 	"./res/ndotvv.sm_xx_yy_zz_202_10-spin_scissor_0_Nc_18" u 1:3 title "202 K--pts" w l lt 2 lw 3 lc 1,\
  	"./res/ndotvv.sm_xx_yy_zz_802_10-spin_scissor_0_Nc_18" u 1:3 title "802 K--pts" w l lt 2 lw 3 lc 2,\
@@ -47,7 +47,7 @@ p 	"./res/ndotvv.sm_xx_yy_zz_202_10-spin_scissor_0_Nc_18" u 1:3 title "202 K--pt
 
 
 set title ""
-set output "ndot_3_sm.tex"
+set output "res27_ndot_3_sm.tex"
 set ylabel "$\\dot{n}^{zxy}$"
 p 	"./res/ndotvv.sm_xx_yy_zz_202_10-spin_scissor_0_Nc_18" u 1:4 title "202 K--pts" w l lt 2 lw 3 lc 1,\
  	"./res/ndotvv.sm_xx_yy_zz_802_10-spin_scissor_0_Nc_18" u 1:4 title "802 K--pts" w l lt 2 lw 3 lc 2,\
