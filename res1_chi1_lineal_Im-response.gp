@@ -9,7 +9,7 @@ set xrange [0:1.5]
 
 ############ S M O O T H 	
 set title "K--pts. convergence of Im $\\chi^{ii}$ (smooth)"
-set output "chi_1_sm.tex"
+set output "res1_chiIm_1_sm.tex"
 set ylabel "Im $\\chi^{xx}$"
 p 	"./" u 1:3 title " K--pts" w l lt 2 lw 3 lc 1,\
  	"./" u 1:3 title " K--pts" w l lt 2 lw 3 lc 2,\
@@ -28,7 +28,7 @@ p 	"./" u 1:3 title " K--pts" w l lt 2 lw 3 lc 1,\
  	"./" u 1:3 title " K--pts" w l lt 1 lw 3 lc 15
 
 set title ""
-set output "chi_2_sm.tex"
+set output "res1_chiIm_2_sm.tex"
 set ylabel "Im $\\chi^{yy}$"
 p 	"./" u 1:5 title " K--pts" w l lt 2 lw 3 lc 1,\
  	"./" u 1:5 title " K--pts" w l lt 2 lw 3 lc 2,\
@@ -48,7 +48,7 @@ p 	"./" u 1:5 title " K--pts" w l lt 2 lw 3 lc 1,\
 
 
 set title ""
-set output "chi_3_sm.tex"
+set output "res1_chiIm_3_sm.tex"
 set ylabel "Im $\\chi^{zz}$"
 p 	"./" u 1:7 title " K--pts" w l lt 2 lw 3 lc 1,\
  	"./" u 1:7 title " K--pts" w l lt 2 lw 3 lc 2,\
