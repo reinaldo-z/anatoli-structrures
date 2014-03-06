@@ -44,7 +44,7 @@ p 	"./" u 1:2 title " " w l lt 1 lw 3 lc 1,\
 
 
 set output "res3_eta2_2_sm_NCconv.tex"
-set title ""
+set title " "
 set ylabel "$\\eta^{yxy}$"
 set key top right
 p 	"./" u 1:3 title " " w l lt 1 lw 3 lc 1,\
@@ -79,7 +79,7 @@ p 	"./" u 1:3 title " " w l lt 1 lw 3 lc 1,\
 
 
 set output "res3_eta2_3_sm_NCconv.tex"
-set title ""
+set title " "
 set ylabel "$\\eta^{zxy}$"
 set key top right
 p 	"./" u 1:4 title " " w l lt 1 lw 3 lc 1,\

@@ -27,7 +27,7 @@ p 	"./" u 1:2 title " K--pts" w l lt 2 lw 3 lc 1,\
  	"./" u 1:2 title " K--pts" w l lt 1 lw 3 lc 14,\
  	"./" u 1:2 title " K--pts" w l lt 1 lw 3 lc 15
 
-set title ""
+set title " "
 set output "chi_2_sm.tex"
 set ylabel "real $\\chi^{yy}$"
 p 	"./" u 1:4 title " K--pts" w l lt 2 lw 3 lc 1,\
@@ -47,7 +47,7 @@ p 	"./" u 1:4 title " K--pts" w l lt 2 lw 3 lc 1,\
  	"./" u 1:4 title " K--pts" w l lt 1 lw 3 lc 15
 
 
-set title ""
+set title " "
 set output "chi_3_sm.tex"
 set ylabel "real $\\chi^{zz}$"
 p 	"./" u 1:6 title " K--pts" w l lt 2 lw 3 lc 1,\

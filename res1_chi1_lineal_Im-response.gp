@@ -27,7 +27,7 @@ p 	"./" u 1:3 title " K--pts" w l lt 2 lw 3 lc 1,\
  	"./" u 1:3 title " K--pts" w l lt 1 lw 3 lc 14,\
  	"./" u 1:3 title " K--pts" w l lt 1 lw 3 lc 15
 
-set title ""
+set title " "
 set output "res1_chiIm_2_sm.tex"
 set ylabel "Im $\\chi^{yy}$"
 p 	"./" u 1:5 title " K--pts" w l lt 2 lw 3 lc 1,\
@@ -47,7 +47,7 @@ p 	"./" u 1:5 title " K--pts" w l lt 2 lw 3 lc 1,\
  	"./" u 1:5 title " K--pts" w l lt 1 lw 3 lc 15
 
 
-set title ""
+set title " "
 set output "res1_chiIm_3_sm.tex"
 set ylabel "Im $\\chi^{zz}$"
 p 	"./" u 1:7 title " K--pts" w l lt 2 lw 3 lc 1,\

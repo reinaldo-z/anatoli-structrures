@@ -28,7 +28,7 @@ p 	"./" u 1:2 title " K--pts" w l lt 2 lw 3 lc 1,\
  	"./" u 1:2 title " K--pts" w l lt 1 lw 3 lc 15
 
 
-set title ""
+set title " "
 set output "ndot_2_sm.tex"
 set ylabel "$\\dot{n}^{yxy}$"
 p 	"./" u 1:3 title " K--pts" w l lt 2 lw 3 lc 1,\
@@ -47,7 +47,7 @@ p 	"./" u 1:3 title " K--pts" w l lt 2 lw 3 lc 1,\
  	"./" u 1:3 title " K--pts" w l lt 1 lw 3 lc 14,\
  	"./" u 1:3 title " K--pts" w l lt 1 lw 3 lc 15
 
-set title ""
+set title " "
 set output "ndot_3_sm.tex"
 set ylabel "$\\dot{n}^{zxy}$"
 p 	"./" u 1:4 title " K--pts" w l lt 2 lw 3 lc 1,\

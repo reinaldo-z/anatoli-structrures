@@ -44,7 +44,7 @@ p 	"./" u 1:2 title " " w l lt 1 lw 3 lc 1,\
 
 
 set output "res1_chi_2_sm_NCconv.tex"
-set title ""
+set title " "
 set ylabel "real $\\chi^{yy}$"
 set key top right
 p 	"./" u 1:4 title " " w l lt 1 lw 3 lc 1,\
@@ -79,7 +79,7 @@ p 	"./" u 1:4 title " " w l lt 1 lw 3 lc 1,\
 
 
 set output "res1_chi_3_sm_NCconv.tex"
-set title ""
+set title " "
 set ylabel "real $\\chi^{zz}$"
 set key top right
 p 	"./" u 1:6 title " " w l lt 1 lw 3 lc 1,\
