@@ -9,7 +9,7 @@ set yrange [-0.1:]
 # set ytics 0.001
 
 ############ S M O O T H 	
-set title "K--pts. convergence of Im $\\chi^{xx}$ (unsmooth)"
+set title " "
 set output "res1_chiIm_1_sm.tex"
 set ylabel "Im $\\chi^{xx}$"
 # p 	"./res/chi1.kk_xx_yy_zz_202_10-spin_scissor_0_Nc_18" u 1:3 title "202 K--pts" w l lt 2 lw 3 lc 1,\
@@ -29,9 +29,14 @@ p 	"./res/chi1.kk_xx_yy_zz_6052_10-spin_scissor_0_Nc_18" u 1:3 title "6052 K--pt
  	# "./res/chi1.kk_xx_yy_zz_16202_10-spin_scissor_0_Nc_18" u 1:3 title "16202 K--pts" w l lt 1 lw 3 lc 13,\
  	# "./res/chi1.kk_xx_yy_zz_18052_10-spin_scissor_0_Nc_18" u 1:3 title "18052 K--pts" w l lt 1 lw 3 lc 14
 
-# set title ""
-# set output "res1_chiIm_2_sm.tex"
-# set ylabel "Im $\\chi^{yy}$"
+set title " "
+set output "res1_chiIm_2_sm.tex"
+set ylabel "Im $\\chi^{yy}$"
+
+p 	"./res/chi1.kk_xx_yy_zz_6052_10-spin_scissor_0_Nc_18" u 1:5 title "6052 K--pts" w l lt 1 lw 3 lc 1,\
+ 	"./res/chi1.kk_xx_yy_zz_7202_10-spin_scissor_0_Nc_18" u 1:5 title "7202 K--pts" w l lt 1 lw 3 lc 2,\
+ 	"./res/chi1.kk_xx_yy_zz_8452_10-spin_scissor_0_Nc_18" u 1:5 title "8452 K--pts" w l lt 1 lw 3 lc 3
+
 # p 	"./res/chi1.kk_xx_yy_zz_202_10-spin_scissor_0_Nc_18" u 1:5 title "202 K--pts" w l lt 2 lw 3 lc 1,\
 #  	"./res/chi1.kk_xx_yy_zz_802_10-spin_scissor_0_Nc_18" u 1:5 title "802 K--pts" w l lt 2 lw 3 lc 2,\
 #  	"./res/chi1.kk_xx_yy_zz_1802_10-spin_scissor_0_Nc_18" u 1:5 title "1802 K--pts" w l lt 2 lw 3 lc 3,\
@@ -48,9 +53,14 @@ p 	"./res/chi1.kk_xx_yy_zz_6052_10-spin_scissor_0_Nc_18" u 1:3 title "6052 K--pt
 #  	"./res/chi1.kk_xx_yy_zz_18052_10-spin_scissor_0_Nc_18" u 1:5 title "18052 K--pts" w l lt 1 lw 3 lc 14
 
 
-# set title ""
-# set output "res1_chiIm_3_sm.tex"
-# set ylabel "Im $\\chi^{zz}$"
+set title " "
+set output "res1_chiIm_3_sm.tex"
+set ylabel "Im $\\chi^{zz}$"
+
+p 	"./res/chi1.kk_xx_yy_zz_6052_10-spin_scissor_0_Nc_18" u 1:7 title "6052 K--pts" w l lt 1 lw 3 lc 1,\
+ 	"./res/chi1.kk_xx_yy_zz_7202_10-spin_scissor_0_Nc_18" u 1:7 title "7202 K--pts" w l lt 1 lw 3 lc 2,\
+ 	"./res/chi1.kk_xx_yy_zz_8452_10-spin_scissor_0_Nc_18" u 1:7 title "8452 K--pts" w l lt 1 lw 3 lc 3
+
 # p 	"./res/chi1.kk_xx_yy_zz_202_10-spin_scissor_0_Nc_18" u 1:7 title " K202--pts" w l lt 2 lw 3 lc 1,\
 #  	"./res/chi1.kk_xx_yy_zz_802_10-spin_scissor_0_Nc_18" u 1:7 title " K802--pts" w l lt 2 lw 3 lc 2,\
 #  	"./res/chi1.kk_xx_yy_zz_1802_10-spin_scissor_0_Nc_18" u 1:7 title " K1802--pts" w l lt 2 lw 3 lc 3,\

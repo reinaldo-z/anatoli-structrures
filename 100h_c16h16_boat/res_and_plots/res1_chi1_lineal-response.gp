@@ -24,7 +24,7 @@ p 	"./res_original/chi1.sm_xx_yy_zz_802_10-spin_scissor_0_Nc_20"  u 1:2 title 		
  	"./res_original/chi1.sm_xx_yy_zz_16202_10-spin_scissor_0_Nc_20"  u 1:2 title 	"16202  K--pts" w l lt 1 lw 3 lc 10,\
  	"./res_original/chi1.sm_xx_yy_zz_18052_10-spin_scissor_0_Nc_20"  u 1:2 title 	"18052  K--pts" w l lt 1 lw 3 lc 11
 
-set title ""
+set title " "
 set output "res1_chi_2_sm.tex"
 set ylabel "real $\\chi^{yy}$"
 set key top right
@@ -41,7 +41,7 @@ p 	"./res_original/chi1.sm_xx_yy_zz_802_10-spin_scissor_0_Nc_20"  u 1:4 title 		
  	"./res_original/chi1.sm_xx_yy_zz_18052_10-spin_scissor_0_Nc_20"  u 1:4 title 	"18052 K--pts" w l lt 1 lw 3 lc 11
 
 
-set title ""
+set title " "
 set output "res1_chi_3_sm.tex"
 set ylabel "real $\\chi^{zz}$"
 set key top right

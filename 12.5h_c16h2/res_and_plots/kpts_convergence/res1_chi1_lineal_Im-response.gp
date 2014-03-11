@@ -5,7 +5,7 @@ set xlabel "Photon Energy (eV)"
 set xrange [0:1.5]
 # set xtics 1
 set mxtics 5
-set yrange [-1:30]
+set yrange [-.5:]
 # set ytics 0.001
 
 ############ S M O O T H 	
@@ -29,12 +29,13 @@ p 	"./res_k-convergence/chi1.kk_xx_yy_zz_802_10-spin_scissor_0_Nc_8" u 1:3 title
  	# "./" u 1:3 title " K--pts" w l lt 1 lw 3 lc 14,\
  	# "./" u 1:3 title " K--pts" w l lt 1 lw 3 lc 15
 
-# set title " "
-# set output "res1_chiIm_2_sm.tex"
-# set ylabel "Im $\\chi^{yy}$"
-# p 	"./res_k-convergence/chi1.kk_xx_yy_zz_802_10-spin_scissor_0_Nc_8" u 1:5 title "802 K--pts" w l lt 1 lw 3 lc 1,\
-#  	"./res_k-convergence/chi1.kk_xx_yy_zz_3202_10-spin_scissor_0_Nc_8" u 1:5 title "3202 K--pts" w l lt 1 lw 3 lc 2,\
-#  	"./res_k-convergence/chi1.kk_xx_yy_zz_1802_10-spin_scissor_0_Nc_8" u 1:5 title "1802 K--pts" w l lt 1 lw 3 lc 3
+set yrange [-.1:]
+set title " "
+set output "res1_chiIm_2_sm.tex"
+set ylabel "Im $\\chi^{yy}$"
+p 	"./res_k-convergence/chi1.kk_xx_yy_zz_802_10-spin_scissor_0_Nc_8" u 1:5 title "802 K--pts" w l lt 1 lw 3 lc 1,\
+ 	"./res_k-convergence/chi1.kk_xx_yy_zz_3202_10-spin_scissor_0_Nc_8" u 1:5 title "3202 K--pts" w l lt 1 lw 3 lc 2,\
+ 	"./res_k-convergence/chi1.kk_xx_yy_zz_1802_10-spin_scissor_0_Nc_8" u 1:5 title "1802 K--pts" w l lt 1 lw 3 lc 3
 
  	# "./" u 1:5 title " K--pts" w l lt 2 lw 3 lc 4,\
  	# "./" u 1:5 title " K--pts" w l lt 2 lw 3 lc 5,\
@@ -50,12 +51,13 @@ p 	"./res_k-convergence/chi1.kk_xx_yy_zz_802_10-spin_scissor_0_Nc_8" u 1:3 title
  	# "./" u 1:5 title " K--pts" w l lt 1 lw 3 lc 15
 
 
-# set title " "
-# set output "res1_chiIm_3_sm.tex"
-# set ylabel "Im $\\chi^{zz}$"
-# p 	"./res_k-convergence/chi1.kk_xx_yy_zz_802_10-spin_scissor_0_Nc_8" u 1:7 title "802 K--pts" w l lt 1 lw 3 lc 1,\
-#  	"./res_k-convergence/chi1.kk_xx_yy_zz_3202_10-spin_scissor_0_Nc_8" u 1:7 title "3202 K--pts" w l lt 1 lw 3 lc 2,\
-#  	"./res_k-convergence/chi1.kk_xx_yy_zz_1802_10-spin_scissor_0_Nc_8" u 1:7 title "1802 K--pts" w l lt 1 lw 3 lc 3
+set yrange [-.0005:]
+set title " "
+set output "res1_chiIm_3_sm.tex"
+set ylabel "Im $\\chi^{zz}$"
+p 	"./res_k-convergence/chi1.kk_xx_yy_zz_802_10-spin_scissor_0_Nc_8" u 1:7 title "802 K--pts" w l lt 1 lw 3 lc 1,\
+ 	"./res_k-convergence/chi1.kk_xx_yy_zz_3202_10-spin_scissor_0_Nc_8" u 1:7 title "3202 K--pts" w l lt 1 lw 3 lc 2,\
+ 	"./res_k-convergence/chi1.kk_xx_yy_zz_1802_10-spin_scissor_0_Nc_8" u 1:7 title "1802 K--pts" w l lt 1 lw 3 lc 3
 
  	# "./" u 1:7 title " K--pts" w l lt 2 lw 3 lc 4,\
  	# "./" u 1:7 title " K--pts" w l lt 2 lw 3 lc 5,\

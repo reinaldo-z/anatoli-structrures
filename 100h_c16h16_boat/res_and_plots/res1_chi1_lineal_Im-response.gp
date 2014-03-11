@@ -26,7 +26,7 @@ p 	"res_original/chi1.kk_xx_yy_zz_14452_10-spin_scissor_0_Nc_20" u 1:3 title "14
  	"res_original/chi1.kk_xx_yy_zz_16202_10-spin_scissor_0_Nc_20" u 1:3 title "16202 K--pts" w l lt 1 lw 3 lc 11,\
  	"res_original/chi1.kk_xx_yy_zz_18052_10-spin_scissor_0_Nc_20" u 1:3 title "18052 K--pts" w l lt 1 lw 3 lc 12
 
-# set title ""
+# set title " "
 # set output "res1_chiIm_2_sm.tex"
 # set ylabel "Im $\\chi^{yy}$"
 # p 	"res_original/chi1.kk_xx_yy_zz_202_10-spin_scissor_0_Nc_20" u 1:5 title "202 K--pts" w l lt 2 lw 3 lc 1,\
@@ -43,7 +43,7 @@ p 	"res_original/chi1.kk_xx_yy_zz_14452_10-spin_scissor_0_Nc_20" u 1:3 title "14
 #  	"res_original/chi1.kk_xx_yy_zz_18052_10-spin_scissor_0_Nc_20" u 1:5 title "18052 K--pts" w l lt 1 lw 3 lc 12
 
 
-# set title ""
+# set title " "
 # set output "res1_chiIm_3_sm.tex"
 # set ylabel "Im $\\chi^{zz}$"
 # p 	"res_original/chi1.kk_xx_yy_zz_202_10-spin_scissor_0_Nc_20" u 1:7 title "202 K--pts" w l lt 2 lw 3 lc 1,\
