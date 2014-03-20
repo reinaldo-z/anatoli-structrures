@@ -1,0 +1,68 @@
+\newcommand{\tw}{\textwidth}
+\newcommand{\vk}{\textbf{k}}
+\documentclass[11pt]{article}
+
+\usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{amsmath}
+\usepackage[landscape]{geometry}
+\usepackage[spanish]{babel}
+\usepackage{multirow}
+
+\pagestyle{empty}
+\title{Tabla de Convergencias}
+\date{}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ INICIO DEL DOCUMETO ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%
+\begin{document}
+% \maketitle
+\thispagestyle{empty}
+
+
+\begin{table}[h!]
+% \hspace{-2cm}
+\begin{tabular}[b]{ l c c c }
+
+	\multicolumn{4}{c}{ Tabla de convergencia para puntos \vk} \\ \\
+	\hline
+	\hline
+
+	{ Nombre} & { Estructura} & { \hspace{5mm} Convergencia para $\eta^{abc}$} \hspace{5mm} & { \hspace{5mm} Convergencia para $\zeta^{abc}$} \hspace{5mm} \\ 
+	
+	\hline
+	\hline
+	
+	{ C$_{16}$H$_{2}$--row--close} & 	
+	\includegraphics[width=0.12\tw]{../structures_figures/c16h2_row_close_optimized1.png} 
+	\includegraphics[width=0.12\tw]{../structures_figures/c16h2_row_close_optimized2.png} &
+	{ $\surd$} & { $\times$} \\
+	{ C$_{16}$H$_{8}$--alt$^{\dag}$} & 	
+	\includegraphics[width=0.12\tw]{../structures_figures/c16h8_alt1.png} 
+	\includegraphics[width=0.12\tw]{../structures_figures/c16h8_alt2.png} &
+	{ $\surd$} & { $\surd$} \\
+	{ C$_{16}$H$_{8}$--up} & 	
+	\includegraphics[width=0.12\tw]{../structures_figures/c16h8_up-structure1.png} 
+	\includegraphics[width=0.12\tw]{../structures_figures/c16h8_up-structure2.png} &
+	{ $\surd$} & { $\surd$} \\
+	{ C$_{16}$H$_{16}$--boat} & 	
+	\includegraphics[width=0.12\tw]{../structures_figures/c16h16-boat-structure1.png} 
+	\includegraphics[width=0.12\tw]{../structures_figures/c16h16-boat-structure2.png} &
+	{ $\surd$} & { $\times$} \\
+	{ C$_{16}$H$_{16}$--chair$^{\diamondsuit}$} & 	
+	\includegraphics[width=0.12\tw]{../structures_figures/C16H16_chair1.png} 
+	\includegraphics[width=0.12\tw]{../structures_figures/C16H16_chair2.png} &
+	{ $\times$} & { $\times$}\\ \\
+	
+	\hline
+	\hline
+\end{tabular}
+\caption{Resumen de convergencia para puntos \vk \ de las estructuras. $^{\dag}$Para esta estructura se tienen los resultados finales. $^{\diamondsuit}$Con esta estructura no he trabajado.}
+\end{table}
+
+\end{document}
+
+vic ataque: 1
+donadas 175
+recibidas 220

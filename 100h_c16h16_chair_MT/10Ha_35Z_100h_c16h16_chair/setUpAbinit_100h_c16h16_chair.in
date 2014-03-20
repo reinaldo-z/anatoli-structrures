@@ -28,7 +28,7 @@ prtvol      10
 ### Definition of the unit cell
 chkprim     1 
 # a0=2.461  a0b = 4.650615658 Bohr
-acell  4.650615658 8.05397029 35
+acell  4.649999697 8.054035320 35
 rprim      0.8660254037844385 -0.5 0.0 
                  0.0           1.0 0.0 
                  0.0           0.0 1.0
@@ -39,7 +39,7 @@ znucl     1 6
 
 ### Definition of the atoms
 natom     8
-typat     2*1 2*2 2*2 2*1 
+typat     1 1 1 1 2 2 2 2
 
 ## spin-orbit
 so_psp         2 2
