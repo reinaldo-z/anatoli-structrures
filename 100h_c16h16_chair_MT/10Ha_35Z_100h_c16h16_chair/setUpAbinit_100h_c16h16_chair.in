@@ -84,7 +84,7 @@ irdwfk1         1
 iscf2           -2
 kptnrm2         1.0 
 kptopt2         0
-nband2          60
+nband2          80
 nstep1          0
 nstep2          200 
 prtden1         1
